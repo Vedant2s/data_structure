@@ -67,7 +67,7 @@ void nota()
     
      { printf("%d ",u[c[k]]);}
      printf("\n");
-}
+}}
 void main()
 {
     nota();
