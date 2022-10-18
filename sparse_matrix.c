@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include<math.h>
 int main() {
-    int n,j1;
+    int n,j1,k=0,p=0;
     printf("enter the no. of rows and columns of the matrix \n");
     scanf("%d",&n);
 scanf("%d",&j1);
@@ -17,7 +17,29 @@ scanf("%d",&j1);
             {
                 count++;
             }
+            else
+            {
+                k++;
+            }
         }
+    }
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<j1;j++)
+        {
+            if(a[i][j]!=0)
+            {
+                s[p][0]=i;
+                s[p][1]=j;
+                s[p][2]=a[i][j];
+                p++;
+            }
+        }
+    }
+    for(int i=0;i<k;i++)
+    {
+        printf("%d \t %d \t %d \t",s[i][0],s[i][1],s[i][2]);
+        printf("\n");
     }
     meow=(n*j1)/2;
     if(count>meow)
