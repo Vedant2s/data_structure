@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include<math.h>
 int main() {
-    int n,j1,k=0,p=0;
+    int n,j1,k=0,p=0,s[19][19];
     printf("enter the no. of rows and columns of the matrix \n");
     scanf("%d",&n);
-scanf("%d",&j1);
+    scanf("%d",&j1);
     int a[19][19],count=0,meow;
     for(int i=0;i<n;i++)
     {
@@ -36,9 +36,10 @@ scanf("%d",&j1);
             }
         }
     }
+    printf("R \t c \t v \t");
     for(int i=0;i<k;i++)
     {
-        printf("%d \t %d \t %d \t",s[i][0],s[i][1],s[i][2]);
+        printf("%d \t %d \t %d \t \n",s[i][0],s[i][1],s[i][2]);
         printf("\n");
     }
     meow=(n*j1)/2;
