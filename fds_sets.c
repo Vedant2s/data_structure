@@ -44,11 +44,27 @@ void intersection()
 void nota()
 {
     int u[]={1,2,3,4,5,6,7},a[]={1,2,3},b[]={2,3,4,5};
-    int c[100],n1,n2,n,k=0,i,j,s=0;
+    int c[10],k=0;
+    for(int i=0;i<7;i++)
+    {
+        for(int j=0;j<3;j++)
+        {
+        if(u[i]==a[j])
+        {
+        c[k]=i;
+        k++;
+        }
+        }
+    }
+    for(int i=0;i<7;i++)
+    {
+        if(i!=c[i])
+        printf("%d \n",u[i]);
+
+    }
     
     
-    
-    for( i=0;i<3;i++)
+   /* for( i=0;i<3;i++)
     {
          for(j=0;j<7;j++)
          {
@@ -67,7 +83,7 @@ void nota()
     
      { printf("%d ",u[c[k]]);}
      printf("\n");
-}}
+}*/}
 void main()
 {
     nota();
