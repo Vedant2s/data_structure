@@ -12,7 +12,8 @@ int main() {
         for(int j=0;j<j1;j++)
         {
             printf("enter a[%d][%d] ",i,j);
-            scanf("%d \n",&a[i][j]);
+            scanf("%d",&a[i][j]);
+	    printf("\n");
             if(a[i][j]==0)
             {
                 count++;
@@ -36,7 +37,7 @@ int main() {
             }
         }
     }
-    printf("R \t c \t v \t");
+    printf("R \t c \t v \t\n");
     for(int i=0;i<k;i++)
     {
         printf("%d \t %d \t %d \t \n",s[i][0],s[i][1],s[i][2]);
