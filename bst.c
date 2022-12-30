@@ -74,6 +74,7 @@ void postorder(struct node* root)
 }
 struct node* insert(struct node* node, int key)
 {
+   
  
     if (node == NULL)
         {return newNode(key);}
@@ -143,8 +144,7 @@ int main()
 {
 
     struct node* root = NULL;
-    root=(struct node*)malloc(sizeof(struct node));
-
+    
     int ch,y,d;
     do{
         printf("\n1.insert\n2.traverse\n3.search\n4.delete element\n5.preorder\n6.postorder\n");
@@ -183,3 +183,4 @@ int main()
  
     return 0;
 }
+
