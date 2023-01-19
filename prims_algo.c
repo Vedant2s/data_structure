@@ -2,7 +2,7 @@
 #include<math.h>
 void main()
 {
-int v,min,e=1;
+int v,min,e=0;
 printf("Enter the no. of vertices");
 scanf("%d",&v);
 int a[v][v],visited[10]={};
@@ -42,4 +42,5 @@ visited[0]=1;
 		}
 		e++;
 	}
+	printf("\ntotal cost = %d\n",total);
 }
