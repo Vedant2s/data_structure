@@ -1,11 +1,21 @@
 #include <stdio.h>
 #define n 3
-    int a[n][n],visited[n],stack[10]={},top=-1;
+    int a[n][n],f=-1,R=-1,visited[n],stack[10]={},top=-1,queue[10]={};
 int pop(){
     int e= stack[top];
     stack[top]=0;
     top--;
     return e;
+}
+void BFS(int v){
+    visited[v]=1;
+    printf("%d",v);
+    for(int i=0;i<n;i++){
+        if(a[v][i]==1&&!visited[i])
+            queue[++R]=i;
+    }
+    if(f<R)
+    BFS(queue[++f]);
 }
 void DFS(int v){
     visited[v]=1;
